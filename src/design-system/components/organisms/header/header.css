@@ -1,10 +1,17 @@
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+}
+
 .header {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 15px 20px;
+  display: flex;
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  justify-content: space-between;
+  padding: 15px 20px;
 }
 
 .header svg {

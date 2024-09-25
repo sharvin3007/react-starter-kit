@@ -1,0 +1,21 @@
+.link {
+  display: inline-block;
+  cursor: pointer;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #1ea7fd;
+  text-decoration: none;
+}
+
+.link--primary {
+  color: #5c5695;
+}
+
+.link--secondary {
+  color: #d13438;
+}
+
+.disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  color: #9c9c9c;
+}

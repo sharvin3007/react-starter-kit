@@ -7,9 +7,13 @@ const meta = {
   title: 'Organisms/Header',
   component: Header,
   tags: ['autodocs'],
-  parameters: {
-    layout: 'fullscreen',
-  },
+  decorators: [
+    (Story) => (
+      <div style={{ margin: '0 auto' }}>
+        <Story />
+      </div>
+    ),
+  ],
   args: {
     onLogin: fn(),
     onLogout: fn(),
@@ -25,6 +29,7 @@ export const LoggedIn: Story = {
     user: {
       name: 'Jane Doe',
     },
+    isSticky: false,
   },
 }
 

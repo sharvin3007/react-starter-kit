@@ -5,6 +5,7 @@ export interface User {
 }
 
 export interface HeaderProps {
+  isSticky?: boolean
   user?: User
   onLogin?: () => void
   onLogout?: () => void
