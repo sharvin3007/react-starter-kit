@@ -1,3 +1,5 @@
 autodocs
+classname
+Testid
 tseslint
 typecheck
