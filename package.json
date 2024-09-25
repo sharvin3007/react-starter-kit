@@ -8,6 +8,7 @@
     "dev": "vite",
     "format:lint": "yarn format && yarn lint",
     "prettier": "prettier  \"**/*.+(json|yml|css|md|mdx|ts|tsx)\" --check",
+    "prepare": "husky",
     "prettier:fix": "prettier --write \"**/*.+(json|yml|css|md|mdx|ts|tsx)\"",
     "lint-staged": "lint-staged",
     "lint:fix": "eslint --fix \"src/**/*.{ts,tsx,js,jsx,cjs,mjs}\"",
