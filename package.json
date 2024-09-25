@@ -12,7 +12,7 @@
     "lint:fix": "eslint --fix \"src/**/*.{ts,tsx,js,jsx,cjs,mjs}\"",
     "lint": "eslint \"src/**/*.{ts,tsx,js,jsx,cjs,mjs}\"",
     "preview": "vite preview",
-    "test": "vitest",
+    "test": "vitest run --coverage",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
