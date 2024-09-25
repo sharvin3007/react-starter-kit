@@ -1,6 +1,12 @@
-.layout-center {
+.layout {
   display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 64px;
+}
+
+.layout-content {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
 }

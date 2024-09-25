@@ -1,9 +1,11 @@
 import { BaseLayout } from '../../templates/baseLayout'
 
-export const LandingPage = () => {
+import { LandingPageProps } from './LandingPage.types'
+
+export const LandingPage = ({ isPrimaryBanner, primaryBanner, secondaryBanner, children }: LandingPageProps) => {
   return (
-    <BaseLayout dataTestid="landing-page" banner="This is a landing page banner">
-      <h1>This is a landing page</h1>
+    <BaseLayout dataTestid="landing-page" banner={isPrimaryBanner ? primaryBanner : secondaryBanner}>
+      {children}
     </BaseLayout>
   )
 }
