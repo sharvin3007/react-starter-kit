@@ -13,6 +13,7 @@ Currently, two official plugins are available:
 - **Husky**: Git hooks for linting and formatting.
 - **Storybook**: Component development and testing.
 - **Chromatic**: Automated visual testing and Storybook publishing.
+- **Vercel**: App is deployed to Vercel using free tier.
 
 ## Development Getting Started
 
@@ -82,6 +83,10 @@ Chromatic is integrated into this project for automated visual regression testin
 
 - [Chromatic Setup](https://www.chromatic.com/setup?appId=66f4498c0319c36be6175c16)
 - [Published Storybook](https://66f4498c0319c36be6175c16-vnwyzyukhp.chromatic.com/)
+
+## Deploy on Vercel
+
+The starter kit is deployed using Vercel free hosting which provides seamless integration with Vite. The deployment documentation is available **[here](https://react-starter-kit-peach.vercel.app/)**.
 
 ### Lint
 
