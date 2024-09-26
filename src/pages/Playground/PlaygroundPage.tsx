@@ -14,11 +14,9 @@ const PlaygroundContent = () => {
   const { theme, toggleTheme } = useTheme()
 
   return (
-    <ThemeProvider>
-      <div className={`playground-container ${theme}`}>
-        <h1>Welcome to the Playground</h1>
-        <button onClick={toggleTheme}>Toggle Theme</button>
-      </div>
-    </ThemeProvider>
+    <div className={`playground-container ${theme}`}>
+      <h1>Welcome to the Playground</h1>
+      <button onClick={toggleTheme}>Toggle Theme</button>
+    </div>
   )
 }
