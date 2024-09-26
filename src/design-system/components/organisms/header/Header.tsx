@@ -1,4 +1,4 @@
-import ViteSvg from '../../../../../public/vite.svg'
+import ViteSvg from '../../../../assets/vite.svg'
 import { Button } from '../../atoms'
 
 import { HeaderProps } from './Header.types'
