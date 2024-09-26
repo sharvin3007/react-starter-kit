@@ -1,4 +1,4 @@
-# React Starter Kit with TypeScript, Vite, ESLint, Prettier, Husky, Storybook
+# ![ReactLogo](./src/assets/react.svg) React Starter Kit with TypeScript, Vite, ESLint, Prettier, Husky, Storybook ![ViteLogo](./src/assets/vite.svg)
 
 This project is a React starter kit, designed to streamline the development process by integrating modern tools and best practices. It includes Vite for fast builds, TypeScript for type safety, ESLint and Prettier for code quality and formatting, Husky for pre-commit hooks, and Storybook with Chromatic for component development and visual testing.
 Currently, two official plugins are available:
