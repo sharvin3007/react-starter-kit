@@ -71,10 +71,18 @@ Ensure you have the following installed on your machine:
     yarn chromatic
    ```
 
+### Visual and Interactive Component Testing with Chromatic
+
+Chromatic is integrated into this project for automated visual regression testing, ensuring UI components look and behave correctly across changes. It captures visual snapshots of your Storybook components and highlights any unintended changes.
+
+- **Visual Regression Testing**: Automatically detects UI changes by comparing the current state of your components with previous snapshots.
+- **Interactive Testing**: Allows you to interact with components and simulate various states.
+- **CI/CD Integration**: Chromatic can be integrated into your CI pipeline to automate testing and approval workflows. **[TODO]**
+
 ### Chromatic
 
 - [Chromatic Setup](https://www.chromatic.com/setup?appId=66f4498c0319c36be6175c16)
-- [Published Storybook](https://66f4498c0319c36be6175c16-nirjvngnvc.chromatic.com/)
+- [Published Storybook](https://66f4498c0319c36be6175c16-vnwyzyukhp.chromatic.com/)
 
 ### Lint
 
