@@ -1,6 +1,6 @@
 import { LinkComponentProps } from './Link.types'
 
-import './Link.css'
+import './link.css'
 export const LinkComponent = ({
   href,
   children,
