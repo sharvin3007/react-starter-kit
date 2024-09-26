@@ -1,2 +1,2 @@
-export { HomePage } from './Home'
-export { LandingPage } from './Landing'
+export * from './Landing'
+export * from './TechnicalAssessment'

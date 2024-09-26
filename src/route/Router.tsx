@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-import { HomePage, LandingPage } from '../pages'
+import { LandingPage, TechnicalAssessmentPage } from '../pages'
 
 import { Routes as Paths } from './Routes'
 
@@ -9,7 +9,7 @@ export const RouterWrapper = () => {
     <BrowserRouter>
       <Routes>
         <Route path={Paths.Landing} element={<LandingPage />} />
-        <Route path={Paths.Home} element={<HomePage />} />
+        <Route path={Paths.TechnicalAssessment} element={<TechnicalAssessmentPage />} />
       </Routes>
     </BrowserRouter>
   )

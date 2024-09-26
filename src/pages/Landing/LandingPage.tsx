@@ -1,15 +1,31 @@
 import { useNavigate } from 'react-router-dom'
 
-import { Button } from '../design-system/components'
-import { LandingPage as LandingPageComponent } from '../design-system/components/pages/landingPage/LandingPage'
-import { Routes as Paths } from '../route/Routes'
+import { Button } from '../../design-system/components'
+import { LandingPage as LandingPageComponent } from '../../design-system/components/pages/landingPage/LandingPage'
+import { Routes as Paths } from '../../route/Routes'
+
+import './landingPage.css'
+
 export const LandingPage = () => {
   const navigate = useNavigate()
   return (
-    <LandingPageComponent isPrimaryBanner primaryBanner={<p>This is the primary banner</p>}>
+    <LandingPageComponent
+      isPrimaryBanner
+      primaryBanner={
+        <div className="banner">
+          <p>This is the primary banner</p>
+        </div>
+      }
+    >
       <div>
-        <Button onClick={() => navigate(Paths.Home)} primary size="large" label="Home" />
+        <Button
+          label="Page Up Technical Assessment"
+          primary
+          size="large"
+          onClick={() => navigate(Paths.TechnicalAssessment)}
+        />
       </div>
+      <h1>Hello, Welcome to the Starter Kit Project</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

@@ -15,7 +15,7 @@ export const BaseLayout = ({ banner, children, isStickyNavigation, dataTestid }:
       <Header
         user={user}
         isSticky={isStickyNavigation}
-        onCreateAccount={() => setUser({ name: user?.name || 'Jane Doe' })}
+        onCreateAccount={() => setUser({ name: user?.name || 'Sharvin' })}
         onLogin={() => setUser({ name: user?.name || 'Jane Doe' })}
         onLogout={() => setUser(undefined)}
       />
