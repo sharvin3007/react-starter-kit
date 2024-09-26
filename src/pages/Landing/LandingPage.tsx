@@ -13,17 +13,12 @@ export const LandingPage = () => {
       isPrimaryBanner
       primaryBanner={
         <div className="banner">
-          <p>This is the primary banner</p>
+          <p>This is the landing page banner</p>
         </div>
       }
     >
       <div>
-        <Button
-          label="Page Up Technical Assessment"
-          primary
-          size="large"
-          onClick={() => navigate(Paths.TechnicalAssessment)}
-        />
+        <Button label="Playground" primary size="large" onClick={() => navigate(Paths.Playground)} />
       </div>
       <h1>Hello, Welcome to the Starter Kit Project</h1>
       <p>

@@ -1,1 +1,0 @@
-export { TechnicalAssessmentPage } from './TechnicalAssessmentPage'
