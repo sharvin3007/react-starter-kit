@@ -27,14 +27,13 @@ Ensure you have the following installed on your machine:
 
 ### Steps
 
-1. Clone the repository
+1. Clone the repository from [GitHub](https://github.com/sharvin3007/react-starter-kit.git)
 
    ```bash
    git clone <repo-url>
    ```
 
-2. Install dependencies
-   Navigate to the cloned repository and run the below command
+2. Navigate to the cloned repository and install dependencies
 
    ```bash
    cd react-starter-kit
