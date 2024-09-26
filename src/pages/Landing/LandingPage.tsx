@@ -12,7 +12,7 @@ export const LandingPage = () => {
     <LandingPageComponent
       isPrimaryBanner
       primaryBanner={
-        <div className="banner">
+        <div className="banner-primary">
           <p>This is the landing page banner</p>
         </div>
       }

@@ -19,8 +19,9 @@ export const BaseLayout = ({ banner, children, isStickyNavigation, dataTestid }:
         onLogin={() => setUser({ name: user?.name || 'Jane Doe' })}
         onLogout={() => setUser(undefined)}
       />
+      {banner && <>{banner}</>}
+
       <section data-testid={dataTestid} className="layout">
-        {banner && <div className="banner">{banner}</div>}
         <div className="layout-content">{children}</div>
       </section>
     </>

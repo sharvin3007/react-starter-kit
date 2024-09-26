@@ -82,7 +82,7 @@ Chromatic is integrated into this project for automated visual regression testin
 ### Chromatic
 
 - [Chromatic Setup](https://www.chromatic.com/setup?appId=66f4498c0319c36be6175c16)
-- [Published Storybook](https://66f4498c0319c36be6175c16-vnwyzyukhp.chromatic.com/)
+- [Storybook](https://66f4498c0319c36be6175c16-ekckywliep.chromatic.com/)
 
 ## Deploy on Vercel
 
