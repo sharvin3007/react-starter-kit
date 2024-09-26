@@ -15,6 +15,7 @@ export const LinkComponent = ({
 
   return (
     <a
+      aria-disabled={disabled}
       className={'link ' + linkStyle + ' ' + isDisabledLink}
       data-testid={dataTestid}
       target={target}

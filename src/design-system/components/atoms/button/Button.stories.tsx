@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { fn } from '@storybook/test'
+import { expect, fn, userEvent, within } from '@storybook/test'
 
 import { Button } from './Button'
 
@@ -23,13 +23,20 @@ export const Primary: Story = {
   args: {
     primary: true,
     size: 'small',
-    label: 'Button',
+    label: 'Primary Button',
+    isDisabled: true,
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement)
+    const canvasButton = canvas.getByText('Primary Button')
+    await expect(canvasButton).toBeInTheDocument()
+    await userEvent.click(canvasButton)
   },
 }
 
 export const Secondary: Story = {
   args: {
-    label: 'Button',
+    label: 'Secondary Button',
     size: 'small',
   },
 }
@@ -37,14 +44,14 @@ export const Secondary: Story = {
 export const Large: Story = {
   args: {
     size: 'large',
-    label: 'Button',
+    label: 'Large Button',
   },
 }
 
 export const Small: Story = {
   args: {
     size: 'small',
-    label: 'Button',
+    label: 'Small Button',
   },
 }
 
@@ -52,14 +59,20 @@ export const Loader: Story = {
   args: {
     isLoading: true,
     size: 'small',
-    label: 'Button',
+    label: 'Loader Button',
   },
 }
 
-export const FullWidth: Story = {
+export const Disabled: Story = {
   args: {
-    fullWidthOnMobile: true,
-    size: 'small',
-    label: 'Button',
+    isDisabled: true,
+    size: 'large',
+    label: 'Disabled Button',
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement)
+    const canvasButton = canvas.getByText('Disabled Button')
+    await expect(canvasButton).toBeInTheDocument()
+    await expect(canvasButton).toBeDisabled()
   },
 }

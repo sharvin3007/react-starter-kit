@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { fn } from '@storybook/test'
+import { fn, userEvent, within } from '@storybook/test'
 
 import { Header } from './Header'
 
@@ -35,4 +35,9 @@ export const LoggedIn: Story = {
 
 export const LoggedOut: Story = {
   args: {},
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement)
+    const loginButton = canvas.getByRole('button', { name: /Log in/i })
+    await userEvent.click(loginButton)
+  },
 }

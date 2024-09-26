@@ -8,8 +8,10 @@
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.is-full-width {
-  width: 'max-content';
+.is-disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  color: #9c9c9c;
 }
 
 .button--primary {
