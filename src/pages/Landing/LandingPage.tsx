@@ -1,8 +1,6 @@
 import { useNavigate } from 'react-router-dom'
-
-import { Button } from '../../design-system/components'
-import { LandingPage as LandingPageComponent } from '../../design-system/components/pages/landingPage/LandingPage'
-import { Routes as Paths } from '../../route/Routes'
+import { Button, LandingPage as LandingPageComponent } from '@src/design-system/components'
+import { Routes as Paths } from '@src/route/Routes'
 
 import './landingPage.css'
 

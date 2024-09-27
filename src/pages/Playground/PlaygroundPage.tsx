@@ -1,16 +1,8 @@
-import { ThemeProvider, useTheme } from '../../providers/ThemeProvider'
+import { useTheme } from '@src/providers/ThemeProvider'
 
-import './playgroundPage.css'
+import '@src/globalStyles/global.css'
 
 export const PlaygroundPage = () => {
-  return (
-    <ThemeProvider>
-      <PlaygroundContent />
-    </ThemeProvider>
-  )
-}
-
-const PlaygroundContent = () => {
   const { theme, toggleTheme } = useTheme()
 
   return (
