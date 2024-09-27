@@ -20,8 +20,8 @@ export const Header = ({ isSticky, user, onLogin, onLogout, onCreateAccount }: H
           </div>
         ) : (
           <div className="button-container">
-            <Button size="small" onClick={onLogin} label="Log in" />
-            <Button primary size="small" onClick={onCreateAccount} label="Sign up" />
+            <Button fullWidthOnMobile size="small" onClick={onLogin} label="Log in" />
+            <Button fullWidthOnMobile primary size="small" onClick={onCreateAccount} label="Sign up" />
           </div>
         )}
       </div>
