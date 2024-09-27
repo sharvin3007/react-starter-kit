@@ -1,4 +1,4 @@
-import { BaseLayout } from '../../templates/baseLayout'
+import { BaseLayout } from '@src/design-system/components/templates'
 
 import { LandingPageProps } from './LandingPage.types'
 

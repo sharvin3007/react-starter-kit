@@ -14,6 +14,7 @@ export const Button = ({
 }: ButtonProps) => {
   const mode = primary ? 'button--primary' : isDisabled ? 'button--disabled' : 'button--secondary'
   const isFullWidth = fullWidthOnMobile && size === 'small'
+
   return (
     <button
       {...props}

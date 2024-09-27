@@ -1,7 +1,5 @@
 import { useState } from 'react'
-
-import { Header } from '../../organisms'
-import { User } from '../../organisms/header/Header.types'
+import { Header, User } from '@src/design-system/components/organisms'
 
 import { BaseLayoutProps } from './BaseLayout.types'
 

@@ -1,5 +1,5 @@
-import ViteSvg from '../../../../assets/vite.svg'
-import { Button } from '../../atoms'
+import ViteSvg from '@src/assets/vite.svg'
+import { Button } from '@src/design-system/components/atoms'
 
 import { HeaderProps } from './Header.types'
 
@@ -12,12 +12,12 @@ export const Header = ({ isSticky, user, onLogin, onLogout, onCreateAccount }: H
         <img src={ViteSvg} className="logo" alt="Vite logo" />
         <h1>React Starter Kit</h1>
         {user ? (
-          <>
+          <div className="user-content">
             <span className="welcome">
               Welcome, <b>{user.name}</b>!
             </span>
-            <Button size="small" onClick={onLogout} label="Log out" />
-          </>
+            <Button fullWidthOnMobile size="small" onClick={onLogout} label="Log out" />
+          </div>
         ) : (
           <div className="button-container">
             <Button size="small" onClick={onLogin} label="Log in" />

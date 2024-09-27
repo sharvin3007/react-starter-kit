@@ -1,6 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-
-import { LandingPage, PlaygroundPage } from '../pages'
+import { LandingPage, PlaygroundPage } from '@src/pages'
 
 import { Routes as Paths } from './Routes'
 
